@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls and Cows</title>
+
+    <link rel="stylesheet" href="./style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body onload="start()">
+    
+    <main>
+        <div id="logo">
+            <h2 id="bulls">Bulls</h2>
+            <h4>and</h4>
+            <h2 id="cows">Cows</h2>
+        </div>
+
+        <div id="game">
+            <div id="control">
+            <input type="text"
+            maxlength="4"
+            minlength="4"
+            id="userNumber"/>
+            <button id="check" type="button" onclick="toDo()">Check</button> 
+        </div>
+            <p id="message"></p>
+            <p id="results"></p>
+            <div id=cow></div>
+        </div>
+        <div id="animals">
+            <img id="bullimg" src="./images/Bull-PNG.png" alt="">
+            <img id="cowimg" src="./images/pngegg.png" alt="">
+        </div>
+
+        <div id="instruction">
+            <h3>How to play</h3>
+            <p>You enter your guess code, computer compares it with the secret code and gives you two clues: numbers of "bulls" and "cows". What does this mean? A bull is a digit which is present in both the codes in the same position. And a cow is a digit which is present in both the codes in the different position. For example, if the secret code is 2056 and you ask 9516, an answer will be "Number of Bulls: 1 Number of Cows: 1" (but you won't know which digit is a bull and which digit is a cow). That's all!</p>
+        
+        </div>
+        
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
