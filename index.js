@@ -1,4 +1,3 @@
-
 function getSecretNumber() {
   let fourth = Math.floor(Math.random() * 10);
   for (let i; (i = 1); i++) {
@@ -53,15 +52,18 @@ function countBullsAndCows(secretNumber) {
   for (let i = 0; i < playerArray.length; i++) {
     if (
       secretArray.includes(playerArray[i]) &&
-      (secretArray.indexOf(playerArray[i]) !==
-        playerArray.indexOf(playerArray[i])) && playerArray.length == 4
+      secretArray.indexOf(playerArray[i]) !==
+        playerArray.indexOf(playerArray[i]) &&
+      playerArray.length == 4
     ) {
       cows += 1;
     }
 
     if (
       secretArray.includes(playerArray[i]) &&
-      (secretArray.indexOf(playerArray[i]) == playerArray.indexOf(playerArray[i])) && playerArray.length == 4
+      secretArray.indexOf(playerArray[i]) ==
+        playerArray.indexOf(playerArray[i]) &&
+      playerArray.length == 4
     ) {
       bulls += 1;
     }
@@ -70,9 +72,9 @@ function countBullsAndCows(secretNumber) {
   document.getElementById("results").innerHTML = result;
 }
 
-function winner(secretNumber){
-  if(document.getElementById("userNumber").value == secretNumber){
-    document.getElementById("results").innerHTML = "Congratulations You won!  "
+function winner(secretNumber) {
+  if (document.getElementById("userNumber").value == secretNumber) {
+    document.getElementById("results").innerHTML = "Congratulations You won!  ";
   }
 }
 
@@ -88,5 +90,3 @@ function toDo() {
 function start() {
   secretNumber = getSecretNumber();
 }
-
-
