@@ -58,10 +58,10 @@ h4 {
 }
 
 #instruction {
-  width: 80%;
+  width: 85%;
   background-color: rgba(255, 255, 255, 0.733);
   padding: 20px;
-  font-size: 1.2em;
+  font-size: 16px;
   border-radius: 10px;
   border: solid 5px rgb(151, 92, 57);
   line-height: 1.3em;
@@ -75,7 +75,26 @@ h4 {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 5%;
+  width: 85%;
 }
+
+@media only screen and (max-width: 600px) {
+
+  body { 
+     font-size: 0.6em; 
+  }
+
+  #instruction{
+    height: 250px;
+    overflow: hidden scroll;
+  }
+
+  #main{
+    background-position: center;
+  }
+
+}
+
 
 #control {
   width: 100%;
@@ -85,7 +104,7 @@ h4 {
 
 #userNumber {
   height: 50px;
-  width: 60%;
+  width: 50%;
   padding: 5px;
   font-size: 2em;
   border: solid 5px rgb(122, 74, 45);
@@ -94,7 +113,7 @@ h4 {
 
 #check {
   height: 50px;
-  width: 30%;
+  width: 20%;
   vertical-align: top;
   color: white;
   border: solid 5px rgb(122, 74, 45);
@@ -124,6 +143,7 @@ h4 {
 #bullimg {
   transform: scaleX(-1);
   width: 50%;
+  
 }
 
 #cowimg {
@@ -140,3 +160,26 @@ h4 {
   padding: 10px;
   margin: 5px;
 }
+
+#footer{
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+ #clear{
+  height: 50px;
+  width: 20%;
+  vertical-align: top;
+  color: white;
+  border: solid 5px rgb(122, 74, 45);
+  border-radius: 10px;
+  background-color: rgb(228, 139, 87);
+  font-size: 2.3em;
+  font-family: "Road Rage", cursive;
+}
+
+
+ }
+

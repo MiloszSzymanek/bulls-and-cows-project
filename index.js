@@ -21,8 +21,10 @@ function getSecretNumber() {
   return secretNumber;
 }
 
+
+
 let secretNumber = getSecretNumber();
-//console.log(secretNumber);
+
 
 function checkPlayersNumber() {
   let number = document.getElementById("userNumber").value;
@@ -38,9 +40,14 @@ function checkPlayersNumber() {
         "The number must consist of 4 digits and each digit must be unique.";
     }
   }
+
   document.getElementById("message").innerHTML = warning;
 }
+
+
 let playersNumber = checkPlayersNumber();
+
+
 
 function countBullsAndCows(secretNumber) {
   let player = document.getElementById("userNumber").value;
@@ -69,6 +76,7 @@ function countBullsAndCows(secretNumber) {
     }
   }
   let result = `Number of Bulls: ${bulls} Number of Cows: ${cows}`;
+  
   document.getElementById("results").innerHTML = result;
 }
 
