@@ -21,10 +21,7 @@ function getSecretNumber() {
   return secretNumber;
 }
 
-
-
 let secretNumber = getSecretNumber();
-
 
 function checkPlayersNumber() {
   let number = document.getElementById("userNumber").value;
@@ -44,10 +41,7 @@ function checkPlayersNumber() {
   document.getElementById("message").innerHTML = warning;
 }
 
-
 let playersNumber = checkPlayersNumber();
-
-
 
 function countBullsAndCows(secretNumber) {
   let player = document.getElementById("userNumber").value;
@@ -76,7 +70,7 @@ function countBullsAndCows(secretNumber) {
     }
   }
   let result = `Number of Bulls: ${bulls} Number of Cows: ${cows}`;
-  
+
   document.getElementById("results").innerHTML = result;
 }
 

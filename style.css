@@ -13,12 +13,11 @@ body {
   );
   display: flex;
   justify-content: center;
-  height: 100vh;
+  
 }
 
 main {
   width: 800px;
-  height: 100vh;
   background-image: url(https://wallpaperaccess.com/full/2106427.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -39,7 +38,7 @@ main {
   font-family: "Road Rage", cursive;
   letter-spacing: 0.2em;
   line-height: 0.7em;
-  font-size: 5em;
+  font-size: 5.5em;
 }
 
 #bulls {
@@ -137,7 +136,7 @@ h4 {
   width: 60%;
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 
 #bullimg {
