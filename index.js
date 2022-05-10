@@ -69,7 +69,7 @@ function countBullsAndCows(secretNumber) {
       bulls += 1;
     }
   }
-  let result = `Number of Bulls: ${bulls} Number of Cows: ${cows}`;
+  let result = ` <img id="bullimg" src="./images/Bull-PNG.png" alt=""> <span class="scores">  ${cows}  ${bulls} </span> <img id="cowimg" src="./images/pngegg.png" alt=""> `;
 
   document.getElementById("results").innerHTML = result;
 }
